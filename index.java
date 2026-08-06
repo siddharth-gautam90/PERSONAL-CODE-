@@ -175,8 +175,18 @@ public class index {
       // }
       // System.out.println(sum - arrSum);
 
+ //Second method to solve it on leet code 
+        // int [] arr = {3, 0, 1}
+        // int n = arr.length;
+        // int sum = n*(n+1)/2; // formula of sum of nums
+        // int arrSum = 0;
+        // for(int num : arr){
+        //     arrSum += num;
+        // }
+        // return sum - arrSum ;
+       
 //   Rotate arr solve on leet code  SOLVE
-//     public void rotate(int[] nums, int k) {
+//          public void rotate(int[] nums, int k) {
 //         int n = nums.length;
 //         k %= n;
 //         reverse(nums, 0, n - 1);
