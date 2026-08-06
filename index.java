@@ -8,7 +8,9 @@ public class index {
       Scanner sc = new Scanner(System.in);
       // int[] x = { 10, 20, 45, 56, 63 };
       // System.out.println(x[3]);
-      // // update element
+      
+// update element
+      
       // x[2] = 54;
       // System.out.println(x[2]);
       // int[] arr = { 34, 544, 32, 45, 56, -76, 66, 55 };
@@ -17,7 +19,9 @@ public class index {
       // for(int i=0; i <n ; i++) {
       // System.out.print(arr[i]+ " ");
       // }
-      // We take input using this: sc.nextInt
+      
+ // We take input using this: sc.nextInt
+      
       // int[] arr = new int[7];
       // for (int i = 0; i < arr.length; i++) {
       // arr[i] = sc.nextInt();
@@ -29,7 +33,9 @@ public class index {
       // System.out.print("Enter Array Element: ");
       // for (int i=0; i<n; i++)
       // arr[i] = sc.nextInt();
-      // // print negatve values
+      
+//print negatve values
+      
       // for (int i = 0; i < n; i++)
       // if(arr[i]<0) System.out.print(arr[i]+ " ");
       // Sum of arr
@@ -39,14 +45,18 @@ public class index {
       // sum += arr[i];
       // }
       // System.out.println(sum);
-      // Producct of arr
+      
+// Producct of arr
+      
       // int[] arr = { 2, 4, 7 ,32 };
       // int sum = 1;
       // for (int i = 0; i < arr.length; i++) {
       // sum *= arr[i];
       // }
       // System.out.println(sum);
-      // Maximum element in arr
+      
+// Maximum element in arr
+      
       // int[] arr = { 2, 4, 7, 32 };
       // int max = arr[0];
       // // int max = Integer.MIN_VALUE; // for better understanding
@@ -55,8 +65,8 @@ public class index {
 
       // }
       // System.out.println(max);
-      //  find second maximum ellem in an arr
-
+      
+ //find second maximum ellem in an arr
       // int[] arr = { 24, 45, 35, 43,67 , 1100 };
       // int max = 0;
       // int smax = 0;
@@ -67,82 +77,83 @@ public class index {
       // for (int i = 0; i <arr.length; i++) {
       //         if (arr[i] > smax && arr[i] != max)
       //                 smax = arr[i];
-
       // }
       // System.out.println(max);
       // System.out.println(smax);
-
-      // Minimum ele in arr
-
+      
+// Minimum ele in arr 
       // int[] arr = { 2, 4, 7, 32 };
       // int min = arr[0];
       // //int min = Integer.MAX_VALUE; // for better understanding
       // for (int i = 0; i <arr.length; i++) {
       // if(arr[i]<min) min = arr[i];
-
       // }
       // System.out.println(min);
-      // string
+      
+// string
       // String[] arr = {"Abinav", "Kunal", "Siddharth"};
       // for (int i = 0; i <arr.length; i++) {
       // System.out.print(arr[i]+ " ");
       // }
-      // Methos of arr
+      
+// Methos of arr
       // int[] arr = { 10, 20, 30, 40 };
       // int[] x = arr; // x is the shallo copy of arr, means arr == x
       // x[0] = 1000;
       // System.out.println(arr[0]);
-      // deep mathods copy of an arr;
+      
+// deep mathods copy of an arr;
       // int[] arr = { 50, 30, 60, 80 };
       // int[] y = Arrays.copyOf(arr, arr.length); // deep copy
       // y[0] = 100;
       // System.out.println(y[0]);
       // System.out.println(arr[0]);
-      // Mutli odd index elem by 2 and add 10 to even intex elem
+      
+// Mutli odd index elem by 2 and add 10 to even intex elem
       // int[] arr = { 20, 30, 35, 40 };
       // for (int i = 0; i < arr.length; i++) {
       // if (i%2==1) arr[i] *= 2;
       // else
       // arr[i] += 10;
       // System.out.print(arr[i] + " ,"); // }
-      // Search in all element
+      
+// Search in all element
       // int[] arr = { 2, 3, 45, 56 };
       // int target = 3;
       // int found = -1; // -1 means target does not exists in an arr
-
       // for (int i = 0; i < arr.length; i++) {
       // if (arr[i] == target) {
       // found = i; // i means any no.except -1, target exists in an arr
       // break;
-
       // }
       // }
       // if (found != -1)
       // System.out.println("Target exists in arr at index: " + found);
       // else System.out.println("Target missing in arr");
-      // Two sum of an arr
+      
+//Two sum of an arr
       // int[] arr = { 1, 4, 6, 7 };
       // int n = arr.length;
       // int target = 10;
       // for (int i = 0; i < n; i++) {
       //         for (int j = i + 1; j < n; j++) {
       //                 if (arr[i] + arr[j] == target) 
-      //                         System.out.println("Target value");
+      //                         System.out.println("Target value"); // return true;
 
       //         }
       // }
-      // System.out.println("kuch nhi");
-      // fore loop 
+      // System.out.println("kuch nhi"); // return false;
+      
+// fore loop 
       // int[] arr = { 2, 4, 5, 6, 7, 8, };
       // for (int elem : arr) { // int elem in arr 
       //         System.out.print(elem + " ");
       // }
-
-      // Reverse array or 2 variable // pending on leet code 
-
+      
+//Reverse array or 2 variable // pending on leet code 
       // int[] arr = { 3, 19, 57, 50, 78, 37, 90 };
       // int n = arr.length;
-      // int i = 0, j = n - 1;         // int i = 2, j = n - 3; this is reverse part in an arr
+      // int i = 0, j = n - 1;         // int i = 2, j = n - 3; this is reverse part in an arr, means bich ke elem ko reverse krro
       // while (i < j) {
       //         int temp = arr[i];
       //         arr[i] = arr[j];
@@ -150,11 +161,11 @@ public class index {
       //         i++;
       // }
       // for (int elem : arr)  System.out.print(elem + " ");
-      // Rotate arr solve on leet code 
-      // this is leet code // missing an arr 
+      
+ // this is leet code // missing an arr 
       // good question 
       // int [] arr = {1, 2, 3, 5};
-      // int n = arr.length + 1; // numbers are 1 to n
+      // int n = arr.length + 1; // numbers are 1 to n //  plus one isliye n to numbers or 1 jo missing number hai 
       // int sum = n * (n + 1) / 2;
       // int arrSum = 0;
       // for (int elem : arr) {
@@ -163,7 +174,27 @@ public class index {
       //     System.out.println(arrSum);
       // }
       // System.out.println(sum - arrSum);
-      // Segregate 0s and 1s 
+
+//   Rotate arr solve on leet code  SOLVE
+//     public void rotate(int[] nums, int k) {
+//         int n = nums.length;
+//         k %= n;
+//         reverse(nums, 0, n - 1);
+//         reverse(nums, 0, k - 1);
+//         reverse(nums, k, n - 1);
+//     }
+//     private void reverse(int[] nums, int i, int j) {
+//         while (i < j) {
+//             int temp = nums[i];
+//             nums[i] = nums[j];
+//             nums[j] = temp;
+//             i++;
+//             j--;
+//         }
+//     }
+// 
+      
+// Segregate 0s and 1s // this code is wrong on leet code , so further try another method to solve it 
       //     int[] arr = { 1, 1, 0, 1, 0, 1, 0 };
       //     int n = arr.length;
       //     int i=0, j=n-1;
@@ -171,7 +202,7 @@ public class index {
       //         if (arr[i] == 0)
       //             i++;
       //         else if(arr[j] == 1)j--;
-      //         else if(i > j);                      
+      //         else if(i > j)    break;                  
       //         else if (arr[i] == 1 && arr[j] == 0) {
       //             arr[i] = 0;
       //             arr[j] = 1;
@@ -180,7 +211,8 @@ public class index {
       //         }
       //     }
       //    System.out.println(Arrays.toString(arr));
-      // Wave arr
+      
+// Wave arr // this code is wrong on leet code , so further try another method to solve it 
       // int[] arr = { 1,3,2,2,3,1};
       // for (int i = 0; i < arr.length -1; i += 2) { // loop run at second last index
       //     // if (i == arr.length - 1) // loop run at last index
@@ -190,14 +222,15 @@ public class index {
       //     arr[i + 1] = temp;
       // }
       //    System.out.println(Arrays.toString(arr));
-      // creating Arraylist
-      ArrayList<Integer> arr = new ArrayList<>();
-      arr.add(18);
-      arr.add(48);
-      arr.add(28);
+      
+//creating Arraylist
+      // ArrayList<Integer> arr = new ArrayList<>();
+      // arr.add(18);
+      // arr.add(48);
+      // arr.add(28);
 
-      System.out.println(arr.get(2)); // like as aar[2]
-      arr.set(2, 100); // like as arr[3] = 100
+      // System.out.println(arr.get(2)); // like as aar[2]
+      // arr.set(2, 100); // like as arr[3] = 100
       //    System.out.println(arr); // print whole list loop wise , not traversing the arr by ourselves 
       //    int n = arr.size(); // like as arr.length
       //    for (int i = 0; i < n; i++) {
@@ -218,8 +251,7 @@ public class index {
       //    }
       //    System.out.println(arr);
 
-      // plus one on leet code 
-
+ //plus one on leet code SOLVE
       // Step 1: Initialize Vector to store digits in reverse order
       // Vector<Integer> ans = new Vector<>();
       // int n = arr.length;
@@ -252,6 +284,7 @@ public class index {
 
       // // Step 6: Return the primitive array result (NOT the Vector ans)
       // return result; 
+      
 // merge two sorted array 
         int[] a = { 2, 5, 9, 20 };
         int[] b = { 1, 3, 4, 6, 7, 8 };
