@@ -14,7 +14,7 @@ public class Lec3Bubble {
         // sorting --> arrangementt of element in ascending or descending order 
         // sort arr --> if question me kuch nhi de rakha ho toh arrange in ass order --> { -1,0, 1, 2, 3, 4,7, 9}
 
-        // check if aaray is sorted 
+// check if aaray is sorted 
         // int[] arr = { 3, 5, 2, 0, -1, 6, 5, 8, 8 };
         // int n = arr.length;
         // for (int i = 0; i < n - 1; i++) {
@@ -55,7 +55,6 @@ public class Lec3Bubble {
         // print(arr); // time complaxity O(n^2)
 
  // Move all zeroes to end of arr // SOLVE ON LEET CODE
-
         // int[] arr = { 2,0, 4, 0, -1, 3, 2, 0, 5, 8, 7, 6 };   
         // int n = arr.length;
         // for (int i = 0; i < n - 1; i++) {
@@ -68,7 +67,8 @@ public class Lec3Bubble {
         //     }
         // }
         // print(arr); 
-        // Selection Shorting Bubble 
+        
+// Selection Shorting Bubble 
         for (int i = 0; i < n - 1; i++) {
             int min = Integer.MAX_VALUE;
             int mindx = 0;
