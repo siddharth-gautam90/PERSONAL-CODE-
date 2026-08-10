@@ -4,11 +4,11 @@ import java.util.Scanner;
 public class binarySearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // Sort arrys
+// Sort arrys
         int[] arr = { 2, 5, 7, 1, -89, 6, 90, -23 };
         Arrays.sort(arr);
         int n = arr.length;
-        // BINARY SEARCH 
+// BINARY SEARCH 
         int target = 903;
         // int low = 0, high = n - 1; // low or high like as i or j index
         // boolean found = false;
@@ -22,12 +22,12 @@ public class binarySearch {
         //         low = mid + 1;
         //     else
         //         high = mid - 1;
-
         // }
         // if (!found) {
         //     System.out.print("Elem not found: " + -1);
         // }
-        // FIRST occurence 
+        
+ // FIRST occurence 
         int lo = 0, hi = arr.length - 1, idx = -1;
         boolean found = false;
         while (lo <= hi) {
@@ -42,7 +42,6 @@ public class binarySearch {
                 System.out.print("Elem found at index: " + mid);
                 found = true;
                 break;
-
             }
         }
         if (!found) {
