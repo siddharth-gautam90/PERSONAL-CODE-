@@ -78,17 +78,26 @@ public class binarySearch {
         // }return -12;
         
 // Floor in a sorted array     
-            int lo =0, hi= arr.length-1;
-            while(lo<=hi){
-                int mid = (lo+hi)/2;
-                if(arr[mid] == target) {
-                    return mid;}  // target found  
-                else if (arr[mid]>target) {
-                    hi = mid - 1;} // go left
-                else {
-                    lo = mid + 1; // ho right 
-                }
-            }// if in case not found , 'lo' represent the correct insert positon
-            return lo;
+            // int lo =0, hi= arr.length-1;
+            // while(lo<=hi){
+            //     int mid = (lo+hi)/2;
+            //     if(arr[mid] == target) {
+            //         return mid;}  // target found  
+            //     else if (arr[mid]>target) {
+            //         hi = mid - 1;} // go left
+            //     else {
+            //         lo = mid + 1; // ho right 
+            //     }
+            // }// if in case not found , 'lo' represent the correct insert positon
+            // return lo;
+// Sqare root 
+        long lo =0, hi = x; // long because of big value 
+        while(lo<=hi){
+            long mid = (lo+hi)/2;
+            if(mid*mid == x) return (int)mid;
+            // mid*mid value bhut bada ho jayega int usse store nhi kr payega that in this case we use long
+            else if(mid*mid>x) hi = mid-1; // go left
+            else lo = mid + 1 ; // go right
+        }return (int)hi; // perfect sq not found
     }
 }
