@@ -28,25 +28,67 @@ public class binarySearch {
         // }
         
  // FIRST occurence 
-        int lo = 0, hi = arr.length - 1, idx = -1;
-        boolean found = false;
-        while (lo <= hi) {
-            int mid = (lo + hi) / 2;
-            if (arr[mid] > target)
-                hi = mid - 1; // go left 
-            else if (arr[mid] < target)
-                lo = mid + 1; // go right
-            else { // arr of [mid] == target 
-                idx = mid;
-                hi = mid - 1;
-                System.out.print("Elem found at index: " + mid);
-                found = true;
-                break;
-            }
-        }
-        if (!found) {
-            System.out.print("Elem not found: " + -1);
+        // int lo = 0, hi = arr.length - 1, idx = -1;
+        // boolean found = false;
+        // while (lo <= hi) {
+        //     int mid = (lo + hi) / 2;
+        //     if (arr[mid] > target)
+        //         hi = mid - 1; // go left 
+        //     else if (arr[mid] < target)
+        //         lo = mid + 1; // go right
+        //     else { // arr of [mid] == target 
+        //         idx = mid;
+        //         hi = mid - 1;
+        //         System.out.print("Elem found at index: " + mid);
+        //         found = true;
+        //         break;
+        //     }
+        // }
+        // if (!found) {
+        //     System.out.print("Elem not found: " + -1);
             
-        }
+        // }
+// Last occurence 
+        // int lo = 0, hi = arr.length - 1, idx = -1;
+        // boolean found = false;
+        // while (lo <= hi) {
+        //     int mid = (lo + hi) / 2;
+        //     if (arr[mid] < target) lo = mid + 1;
+        //     else if (arr[mid] > target) hi = mid - 1;
+        //     else {// target occur 
+        //         idx = mid; // mark index number 
+        //         lo = mid + 1;// go right 
+        //         System.out.print("Elem found at index: " + mid);
+        //         found = true;
+        //         break;      
+        //     }           
+        // }
+        // if (!found) {
+        //     System.out.print("Elem not found: " + -1);
+        // }
+
+//search in a mountain araay ???   SOLVE ON LEET CODE     
+        // int lo = 1, hi = arr.length -2;
+        // first and last elem,in these two no one is peak elem , so -2 sec last elem 
+        // while(lo<=hi){
+        //     int mid = (lo+hi)/2;
+        //     if(arr[mid]>arr[mid-1] && arr[mid]>arr[mid+1]) return mid;
+        //     else if(arr[mid]>arr[mid-1] && arr[mid]<arr[mid+1]) lo = mid + 1;
+        //     else hi = mid -1;
+        // }return -12;
+        
+// Floor in a sorted array     
+            int lo =0, hi= arr.length-1;
+            while(lo<=hi){
+                int mid = (lo+hi)/2;
+                if(arr[mid] == target) {
+                    return mid;}  // target found  
+                else if (arr[mid]>target) {
+                    hi = mid - 1;} // go left
+                else {
+                    lo = mid + 1; // ho right 
+                }
+            }// if in case not found , 'lo' represent the correct insert positon
+            return lo;
     }
 }
