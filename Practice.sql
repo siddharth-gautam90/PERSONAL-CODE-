@@ -320,3 +320,53 @@ from `E1.order_items`
 group by ProductID
 
 
+-- for each of the order status , what is the number of orders for each of the customer
+
+select
+CustomerID, 
+Status,
+count(*) as total_count
+from `E1.orders`
+group by CustomerID, Status;
+
+-- Inventory records are maintained for each warehouse 
+
+select *
+from `E1.inventory`
+limit 5;
+
+select
+WarehouseID,
+count(stock)  as recods 
+from `E1.inventory`
+group by WarehouseID;
+
+
+-- how many orders handled by each of the employes for each status;
+
+select *
+from `E1.orders`
+limit 5; 
+
+select
+  EmployeeID,
+  Status,
+count(*) as total_orders 
+from `E1.orders`
+group by EmployeeID, Status;
+
+
+-- how many products in each category have MRP > rs-20,000
+
+select *
+from `E1.product
+
+
+select 
+ CategoryID,
+ count(*) as total_products,
+from `E1.products`
+where MRP > 20000
+group by CategoryID
+
+
