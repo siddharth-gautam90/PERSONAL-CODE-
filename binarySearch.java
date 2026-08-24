@@ -101,3 +101,19 @@ public class binarySearch {
         }return (int)hi; // perfect sq not found
     }
 }
+
+
+// USING RECURSION
+// BINARY SEARCH PROBLEM 
+    public int binary(int[] arr, int target, int low, int high) {
+        if (low > high)return -1;
+        int mid = low + (high - low) / 2;
+        if(arr[mid] == target) return mid;
+        else if(arr[mid] > target) return binary(arr, target, low, mid-1);
+        else return binary(arr, target, mid + 1, high);
+    }
+    public int search(int[] arr, int target) {
+        int n = arr.length;
+        return binary(arr, target, 0, n - 1);
+    }
+   
