@@ -1,42 +1,42 @@
 
-// class ComplexNumber {
-//     int x;
-//     int y;
+class ComplexNumber {
+    int x;
+    int y;
 
-//     public ComplexNumber(int x, int y) {
-//         this.x = x;
-//         this.y = y;
-//     }
+    public ComplexNumber(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
-//     ComplexNumber() { }
+    ComplexNumber() { }
 
-//     void print() {
-//         if (y >= 0)
-//             System.out.println(x + " + " + y + "i");
-//         else
-//             System.out.println(x + " - " + (-y) + "i");
+    void print() {
+        if (y >= 0)
+            System.out.println(x + " + " + y + "i");
+        else
+            System.out.println(x + " - " + (-y) + "i");
 
-//     }
+    }
 
-//     // add
-//     // void add(ComplexNumber z) {
-//     //     // z2.x = 8;
-//     //     x += z.x;
-//     //     y += z.y;
-//     // }
+    add
+    void add(ComplexNumber z) {
+        // z2.x = 8;
+        x += z.x;
+        y += z.y;
+    }
 
-//     // Multiply
-//     void multiply(ComplexNumber z) {
-//         // z2.x = 8;
-//         // x *= z.x;
-//         // y *= z.y;
-//         x = x * z.x - y * z.y;
-//         y = x * z.y + y * z.x;
-//     }
-//     void divide(ComplexNumber z) {
+    Multiply
+    void multiply(ComplexNumber z) {
+        // z2.x = 8;
+        // x *= z.x;
+        // y *= z.y;
+        x = x * z.x - y * z.y;
+        y = x * z.y + y * z.x;
+    }
+    void divide(ComplexNumber z) {
 
-//     }
-// }
+    }
+}
 
 // FRACTION 
 
@@ -95,17 +95,17 @@ class Fraction {
 
 public class OPPS {
     public static void main(String[] args) {
-        // ComplexNumber z1 = new ComplexNumber(2, -5);
-        // ComplexNumber z2 = new ComplexNumber(3, 4);
-        // z1.print(); z2.print();
-        // z1.add(z2);
-        // // z2.print();
-        // z1.print(); z2.print();
-        // z1.multiply(z2);
-        // z2.multiply(z1);
-        // // z1.print();
+        ComplexNumber z1 = new ComplexNumber(2, -5);
+        ComplexNumber z2 = new ComplexNumber(3, 4);
+        z1.print(); z2.print();
+        z1.add(z2);
         // z2.print();
-        // z2.divide(z1);
+        z1.print(); z2.print();
+        z1.multiply(z2);
+        z2.multiply(z1);
+        // z1.print();
+        z2.print();
+        z2.divide(z1);
 
         // FRACTION CODE 
 
@@ -113,10 +113,9 @@ public class OPPS {
         // f1.print();
         Fraction f2 = new Fraction(7, 3);
         Fraction f3 = new Fraction(-50, -100);
-        // f1.add(f2);
         f1.print();
-        // f1.multiplay(f2);
-        // f1.print();
+        f1.multiplay(f2);
+        f1.print();
         f3.print();
 
     }
