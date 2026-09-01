@@ -1,4 +1,5 @@
 
+
 class Node {
     int val;
     Node next;
@@ -35,12 +36,12 @@ public class DisplayList {
         c.next = d; d.next = e;
         // display(a);
         // displayRec(a);
-        System.out.println(get(a, 4));
+        // System.out.println(get(a, 4));
         
-       Node n = null;
-       n.val = 10;
-       System.out.println(n.val);
-       System.out.println(n.next);
+//        Node n = null;
+//        n.val = 10;
+//        System.out.println(n.val);
+//        System.out.println(n.next);
     }
 
     private static int get(Node head, int idx) {
