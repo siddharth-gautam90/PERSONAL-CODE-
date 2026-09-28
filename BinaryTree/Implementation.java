@@ -1,4 +1,4 @@
-package BinaryTrees;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -38,23 +38,23 @@ public class Implementation {
         a.left = b; a.right = c;
         b.left = d; b.right = e;
         c.left = f; c.right = g;
-//        for(int i=0;i<levels(a);i++){ // O(n^2)
-//            kThLevel(a,0,i);
-//            System.out.println();
-//        }
+       for(int i=0;i<levels(a);i++){ //  tc - O(n^2) 
+           kThLevel(a,0,i);
+           System.out.println();
+       }
 
-//        levelOrder(a);
-//        levelOrderLineWise(a);
-//        preorder(a);
-//        System.out.println();
-//        inorder(a);
-//        System.out.println();
-//        postorder(a);
-//        System.out.println();
-//        System.out.println(size(a));
-//        System.out.println(sum(a));
-//        System.out.println(max(a));
-//        System.out.println(levels(a));
+       levelOrder(a);
+       levelOrderLineWise(a);
+       preorder(a);
+       System.out.println();
+       inorder(a);
+       System.out.println();
+       postorder(a);
+       System.out.println();
+       System.out.println(size(a));
+       System.out.println(sum(a));
+       System.out.println(max(a));
+       System.out.println(levels(a));
     }
 
     private static void kThLevel(Node root, int level, int k) {
